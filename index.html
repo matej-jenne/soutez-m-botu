@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Bot Soutěž | ZŠ Pohůrecká</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">M</span>
+                <span class="logo-text">Bot Challenge</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#o-soutezi" class="nav-link">O soutěži</a></li>
+                <li><a href="#pravidla" class="nav-link">Pravidla</a></li>
+                <li><a href="#harmonogram" class="nav-link">Harmonogram</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">ZŠ Pohůrecká představuje</div>
+            <h1 class="hero-title">
+                <span class="title-line">Soutěž</span>
+                <span class="title-accent">M-Bot</span>
+            </h1>
+            <p class="hero-subtitle">Naprogramuj svého robota a poraz konkurenci</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">16</span>
+                    <span class="stat-label">Týmů</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">48</span>
+                    <span class="stat-label">Soutěžících</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Disciplíny</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#o-soutezi" class="btn btn-primary">Zjistit více</a>
+                <a href="#kontakt" class="btn btn-secondary">Přihlásit tým</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="robot-container">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=600&fit=crop" alt="M-Bot Robot" class="robot-image">
+                <div class="robot-glow"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="o-soutezi" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">O soutěži</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Co je M-Bot?</h3>
+                    <p>M-Bot je vzdělávací robot od Makeblock, který se programuje pomocí vizuálního programování nebo Pythonu. Je ideální pro výuku robotiky.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Kdy a kde?</h3>
+                    <p>Soutěž se koná v tělocvičně ZŠ Pohůrecká. Přesné datum bude upřesněno. Trvání: celý den s přestávkami.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Pro koho?</h3>
+                    <p>Soutěž je určena pro žáky naší školy. Týmy mohou být 2-4 členné. Každý tým dostane vlastního M-Bota.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3>Ceny</h3>
+                    <p>Na vítěze čekají hodnotné ceny, diplomy a věčná sláva! Nejlepší týmy mohou reprezentovat školu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pravidla" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Pravidla</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="rules-content">
+                <div class="rules-list">
+                    <div class="rule-item">
+                        <span class="rule-number">01</span>
+                        <div class="rule-text">
+                            <h4>Sestavení týmu</h4>
+                            <p>Každý tým musí mít 2-4 členy ze stejné třídy nebo ročníku.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-number">02</span>
+                        <div class="rule-text">
+                            <h4>Programování</h4>
+                            <p>Roboty se programují v prostředí mBlock. Python je povolen pro pokročilé.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-number">03</span>
+                        <div class="rule-text">
+                            <h4>Fair Play</h4>
+                            <p>Jakékoliv úmyslné poškození robotů soupeřů vede k diskvalifikaci.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-number">04</span>
+                        <div class="rule-text">
+                            <h4>Čas na přípravu</h4>
+                            <p>Před každou disciplínou je 15 minut na testování a úpravy kódu.</p>
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-number">05</span>
+                        <div class="rule-text">
+                            <h4>Rozhodčí</h4>
+                            <p>Rozhodnutí rozhodčích je konečné a není možné se proti němu odvolat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="disciplines">
+                    <h3 class="disciplines-title">Disciplíny</h3>
+                    <div class="discipline-card">
+                        <div class="discipline-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Sledování čáry</h4>
+                            <p>Robot musí co nejrychleji projet trať vyznačenou černou čárou.</p>
+                        </div>
+                    </div>
+                    <div class="discipline-card">
+                        <div class="discipline-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Překážková dráha</h4>
+                            <p>Navigace robota přes překážky pomocí ultrazvukového senzoru.</p>
+                        </div>
+                    </div>
+                    <div class="discipline-card">
+                        <div class="discipline-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Sumo</h4>
+                            <p>Vytlač soupeřova robota z ringu! Klasický souboj dvou M-Botů.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harmonogram" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Harmonogram</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">8:00</div>
+                    <div class="timeline-content">
+                        <h4>Registrace týmů</h4>
+                        <p>Příchod, registrace a přidělení robotů</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">8:30</div>
+                    <div class="timeline-content">
+                        <h4>Zahájení</h4>
+                        <p>Slavnostní zahájení a vysvětlení pravidel</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">9:00</div>
+                    <div class="timeline-content">
+                        <h4>1. disciplína: Sledování čáry</h4>
+                        <p>Kvalifikační a finálové kolo</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:30</div>
+                    <div class="timeline-content">
+                        <h4>Přestávka</h4>
+                        <p>Občerstvení a příprava na další disciplínu</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">11:00</div>
+                    <div class="timeline-content">
+                        <h4>2. disciplína: Překážky</h4>
+                        <p>Kvalifikační a finálové kolo</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">12:30</div>
+                    <div class="timeline-content">
+                        <h4>Oběd</h4>
+                        <p>Pauza na jídlo</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">13:30</div>
+                    <div class="timeline-content">
+                        <h4>3. disciplína: Sumo</h4>
+                        <p>Turnajový systém 1v1</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">15:00</div>
+                    <div class="timeline-content">
+                        <h4>Vyhlášení výsledků</h4>
+                        <p>Předání cen a slavnostní zakončení</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Galerie</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=800&h=600&fit=crop" alt="M-Bot v akci">
+                    <div class="gallery-overlay"><span>M-Bot v akci</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=300&fit=crop" alt="Různé modely">
+                    <div class="gallery-overlay"><span>Různé modely</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop" alt="Programování">
+                    <div class="gallery-overlay"><span>Programování</span></div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=400&h=600&fit=crop" alt="Robot s ovladačem">
+                    <div class="gallery-overlay"><span>Ovládání</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Kontakt</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Máte otázky?</h3>
+                    <p>Neváhejte nás kontaktovat. Rádi vám odpovíme na všechny dotazy ohledně soutěže.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>Adresa</strong>
+                                <span>ZŠ Pohůrecká, Pohůrecká 16, České Budějovice</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@zspohurecka.cz</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>Telefon</strong>
+                                <span>+420 387 XXX XXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Jméno týmu</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Třída</label>
+                        <input type="text" id="class" name="class" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva / Jména členů týmu</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Odeslat přihlášku</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">M</span>
+                    <span>Bot Challenge</span>
+                </div>
+                <p>ZŠ Pohůrecká | Soutěž v programování robotů M-Bot</p>
+                <div class="footer-links">
+                    <a href="#o-soutezi">O soutěži</a>
+                    <a href="#pravidla">Pravidla</a>
+                    <a href="#harmonogram">Harmonogram</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 ZŠ Pohůrecká. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
