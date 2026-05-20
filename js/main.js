@@ -45,17 +45,18 @@ window.addEventListener('scroll', () => {
 const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    status.textContent = "Odesláno";
-
-    form.reset();
+form.addEventListener('submit', () => {
+    status.textContent = "Odesílám...";
 
     setTimeout(() => {
-        status.textContent = "";
-    }, 3000);
-});
+        status.textContent = "✔ Přihláška byla úspěšně odeslána!";
+        form.reset();
+
+        setTimeout(() => {
+            status.textContent = "";
+        }, 4000);
+
+    }, 800);
 
 // Smooth reveal on scroll
 const observerOptions = {
