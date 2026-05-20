@@ -41,26 +41,12 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
+// kontakt
 // kontakti forma
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(contactForm);
-
-    fetch('https://script.google.com/macros/s/AKfycbyCyISaW6vAcB_Ir8KqWIa6lJmob-Dugy7WV6-h13GX6E04x-EJCl_UgFlURaiiUjw8/exec', {
-        method: 'POST',
-        body: formData
-    })
-    .then(() => {
-        alert('Přihláška byla úspěšně odeslána!');
-        contactForm.reset();
-    })
-    .catch((error) => {
-        console.error('Chyba:', error);
-        alert('Nepodařilo se odeslat formulář.');
-    });
+contactForm.addEventListener('submit', () => {
+    alert('Odesílám přihlášku...');
 });
 
 // Smooth reveal on scroll
