@@ -44,41 +44,23 @@ window.addEventListener('scroll', () => {
 // kontakti forma
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', async (e) => {
+contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
 
-    const data = {
-        jmeno: formData.get('name'),
-        email: formData.get('email'),
-        trida: formData.get('class'),
-        zprava: formData.get('message')
-    };
-
-    try {
-        const response = await fetch(
-            'https://script.google.com/macros/s/AKfycbxA2Lk2675K-CiwvGAC6bHqv1MEsWLVzFLZM6vX_YOMNCsb81qWh7PySGs66Fdkno0X/exec',
-            {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            }
-        );
-
-        const result = await response.json();
-
-        if (result.success) {
-            alert('Přihláška byla odeslána!');
-            contactForm.reset();
-        }
-
-    } catch (error) {
-        console.error(error);
-        alert('Chyba při odesílání.');
-    }
+    fetch('https://script.google.com/macros/s/AKfycbyCyISaW6vAcB_Ir8KqWIa6lJmob-Dugy7WV6-h13GX6E04x-EJCl_UgFlURaiiUjw8/exec', {
+        method: 'POST',
+        body: formData
+    })
+    .then(() => {
+        alert('Přihláška byla úspěšně odeslána!');
+        contactForm.reset();
+    })
+    .catch((error) => {
+        console.error('Chyba:', error);
+        alert('Nepodařilo se odeslat formulář.');
+    });
 });
 
 // Smooth reveal on scroll
