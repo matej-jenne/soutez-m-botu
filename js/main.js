@@ -46,12 +46,8 @@ const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 
 form.addEventListener('submit', () => {
-    status.textContent = "Odesílám...";
-
-    setTimeout(() => {
-        status.textContent = "✔ Přihláška byla úspěšně odeslána!";
-        form.reset();
-
+    status.textContent = "Opravdu chceš odeslat přihlášku? Kliknutím na "OK" ji odešleš.";
+    
         setTimeout(() => {
             status.textContent = "";
         }, 4000);
