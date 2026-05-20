@@ -45,19 +45,16 @@ window.addEventListener('scroll', () => {
 const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 
-form.addEventListener('submit', () => {
-    status.textContent = "Opravdu chceš odeslat přihlášku? Kliknutím na "OK" ji odešleš.";
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    
+    status.textContent = "Odesláno";
+
+    form.reset();
+
     setTimeout(() => {
-        status.textContent = ".";
-        form.reset();
-        
-        setTimeout(() => {
-            status.textContent = "";
-        }, 4000);
-
-    }, 800);
+        status.textContent = "";
+    }, 3000);
 });
 
 // Smooth reveal on scroll
