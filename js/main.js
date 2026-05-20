@@ -46,7 +46,7 @@ window.addEventListener('scroll', () => {
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', () => {
-    alert('Odesílám přihlášku...');
+    alert('Přihláška se odeslala.');
 });
 
 // Smooth reveal on scroll
