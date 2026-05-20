@@ -41,22 +41,13 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-//KONTAKT
-const form = document.getElementById('contactForm');
-const status = document.getElementById('formStatus');
+// kontakt
+// kontakti forma
+const contactForm = document.getElementById('contactForm');
 
-form.addEventListener('submit', () => {
-    status.textContent = "Odesílám...";
-
-    setTimeout(() => {
-        status.textContent = "✔ Přihláška byla úspěšně odeslána!";
-        form.reset();
-
-        setTimeout(() => {
-            status.textContent = "";
-        }, 4000);
-
-    }, 800);
+contactForm.addEventListener('submit', () => {
+    alert('Odesílám přihlášku...');
+});
 
 // Smooth reveal on scroll
 const observerOptions = {
