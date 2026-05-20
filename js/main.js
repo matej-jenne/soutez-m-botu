@@ -41,18 +41,43 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Form submission
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
 
-    // Show success message
-    alert('Děkujeme za přihlášku! Brzy se vám ozveme.');
-    contactForm.reset();
+    const data = {
+        jmeno: formData.get('jmeno'),
+        email: formData.get('email'),
+        trida: formData.get('trida'),
+        zprava: formData.get('zprava')
+    };
+
+    try {
+        const response = await fetch(
+            'https://script.google.com/macros/s/AKfycbxA2Lk2675K-CiwvGAC6bHqv1MEsWLVzFLZM6vX_YOMNCsb81qWh7PySGs66Fdkno0X/exec',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }
+        );
+
+        const result = await response.json();
+
+        if (result.success) {
+            alert('Odesláno!');
+            contactForm.reset();
+        }
+
+    } catch (error) {
+        console.error(error);
+        alert('Chyba při odesílání.');
+    }
 });
 
 // Smooth reveal on scroll
